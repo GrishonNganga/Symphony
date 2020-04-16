@@ -15,7 +15,7 @@
     opacity: .7;
 }
 .banner-bg{
-    background-image: url("sing-bg.jpg");
+    background-image: url("image/sing-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .5;
@@ -108,24 +108,28 @@
 }
 .quote-records{
     margin-top: 50px;
-    background-color: #1e1e1d;
     padding: 2px;
     margin-left: 2.2%;
     width: 60%;
 }
 .quote-record{
-    margin: 10px 0px 10px 10px;
+    
     display: flex;
 }
 .quote-record img{
-    width: 150px;
-    height: 150px;
+    margin: 10px 0px 10px 10px;
+    width: 80px;
+    height: 80px;
     border-radius: 2px;
     
 }
+.divider{
+    background-color: #1e1e1d;
+    border-radius: 2px;
+}
 .quote-record p{
     margin-left: 3%;
-    margin-top: 7%;
+    margin-top: 4%;
     color: white;
     font-family: "Courier";
     font-size: 20px;
@@ -135,9 +139,10 @@
     font-size: 30px;
 }
 .quote-details{
+    float: initial;
     color: white;
     font-size: 18px;
-    margin: 10px 0px 10px 20px;
+    margin: 5px 0px 5px 20px;
 }
 .artist-name{
     color: white;
@@ -149,4 +154,87 @@
 }
 .quote-details-small{
     font-size: 15px;
+}
+.full-trending-button{
+    margin-left: 40%;
+    padding: 12px;
+    background-color: #eb4d15;
+    border-color: #eb4d15;
+    color: white;
+    font-family: "Courier";
+    font-weight: bold;
+    border-radius: 20px;
+    border-style: solid;
+}
+.col{
+    float: left;
+}
+.featured{
+    font-family: "Courier";
+    margin: -4% 0% 0% 5%;
+    padding: 0% 5% 0% 5%;
+    font-size: 30px;
+    color: white;
+    background-color: #1e1e1d;
+    box-shadow: #1e1e1d 2px 2px 1px;   
+}
+.albums{
+    float: right;
+    margin-right: 10%;
+    width: 22%;
+    margin-top: 1.2%;
+    margin-left: 5%;
+}
+.album p{
+    display: inline;
+    color: white;
+    font-size: 20px;
+    font-family: "Courier";
+}
+.albums img{
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+}
+.album{
+    background-color: #1e1e1d;
+    padding: 0% 0% 10% 0%; 
+    margin-bottom: 10%;
+}
+.mid-section{
+    width: 99%;
+    display: block;
+    position: absolute;
+    top: 1700px;
+}
+.mid{
+    background-color: #e3dddc;
+    padding: 5% 10% 5% 35%;
+    font-size: 40px;
+    font-family: "Courier";
+    font-weight: bold;
+    
+}
+.mid img{
+    width: 60px;
+    height: 40px;
+}
+footer{
+    width: 99%;
+    display: block;
+    position: absolute;
+    top: 2020px;
+    color: white;
+}
+footer ul{
+    padding: 5% 0% 5% 5%;
+    background-color: black;
+    list-style-type: none;
+}
+footer ul li{
+    margin-bottom: 1%;
+}
+#symph-copy{
+    font-size: 25px;
 }

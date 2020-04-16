@@ -33,19 +33,145 @@
                 <strong>Trending Quotes <span id="t-genre"> Genre:</span></strong><button id="trending-all"> <strong>All Genres</strong>   <i class="fa fa-caret-down" id="downArrow"></i></button> 
             </p>            
         </div>
+    </div>       
     </div>
-    <div class="quote-records">
-        <div class="quote-record">
-            <img src="C:\Moringa\Symphony\image\j-cole.jpg" alt="J Cole">
-            <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+
+    <div class="quote-records col">
+        <div class="divider">
+            <div class="quote-record">
+                <img src="C:\Moringa\Symphony\image\j-cole.jpg" id="image" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+            </div>
+            <div class="quote-details">
+                <p>Artist: <span class="artist-name">J Cole &nbsp; &nbsp;</span>
+                    <img src="C:\Moringa\Symphony\image\visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="C:\Moringa\Symphony\image\fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+                </p>
+            </div>
         </div>
-        <div class="quote-details">
-            <p>Artist: <span class="artist-name">J Cole</span></p>
-            <img src="C:\Moringa\Symphony\image\visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K</span> <br>
-            <img src="C:\Moringa\Symphony\image\fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+        <div class="divider">
+            <div class="quote-record">
+                <img src="C:\Moringa\Symphony\image\j-cole.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+            </div>
+            <div class="quote-details">
+                <p>Artist: <span class="artist-name">J Cole &nbsp; &nbsp;</span>
+                    <img src="C:\Moringa\Symphony\image\visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="C:\Moringa\Symphony\image\fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="divider">
+            <div class="quote-record">
+                <img src="C:\Moringa\Symphony\image\j-cole.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+            </div>
+            <div class="quote-details">
+                <p>Artist: <span class="artist-name" id="artist">J Cole &nbsp; &nbsp;</span>
+                    <img src="C:\Moringa\Symphony\image\visibility-white.jpg" alt="Views" id="views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="C:\Moringa\Symphony\image\fire-black.jpg" alt="Fire"><span class="quote-details-small" id="flames"> 105K</span>
+                </p>
+            </div>
+        </div>
+        <div class="divider">
+            <div class="quote-record">
+                <img src="C:\Moringa\Symphony\image\j-cole.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+            </div>
+            <div class="quote-details">
+                <p>Artist: <span class="artist-name">J Cole &nbsp; &nbsp;</span>
+                    <img src="C:\Moringa\Symphony\image\visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="C:\Moringa\Symphony\image\fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+                </p>
+            </div>
+        </div>
+        <button class="full-trending-button">See Full Trending</button>
+    </div>      
+    <div class="col featured">
+        <p>
+            <strong>Featured Albums</strong>
+        </p>
+    </div>  
+    <div class="albums col">
+        <div class="album">
+            <img src="C:\Moringa\Symphony\image\miller.jpg" alt="Mac Miller">
+            <p>Album: Circles</p>
+
+        </div>
+        <div class="album">
+            <img src="C:\Moringa\Symphony\image\miller.jpg" alt="Mac Miller">
+            <p>Album: Circles</p>
         </div>
 
-        
-    
+        <div class="album">
+            <img src="C:\Moringa\Symphony\image\miller.jpg" alt="Mac Miller">
+            <p>Album: Circles</p>
+        </div>
+
+        <div class="album">
+            <img src="C:\Moringa\Symphony\image\miller.jpg" alt="Mac Miller">
+            <p>Album: Circles</p>
+        </div>
+
+        <div class="album">
+            <img src="C:\Moringa\Symphony\image\miller.jpg" alt="Mac Miller">
+            <p>Album: Circles</p>
+        </div>
+        <button class="full-trending-button">See More Albums</button>
+    </div>
+    <div class="mid-section">
+        <p class="mid">
+            Connect with us. <br> <br> &nbsp; &nbsp;<img src="image\ig.jpg" alt="Instagram"> <img src="image\fb.png" alt="Facebook"> <img src="image\twitter.png" alt="Twitter">
+        </p>
+    </div>
+    <footer>
+        <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li id="symph-copy">Symphony &copy;</li>
+        </ul>
+    </footer>
 </body>
+<script>
+    var trendingQuotes = [
+        {
+            "image": "j-cole.jpg",
+            "quote": "Aint no life like yours",
+            "artist": "J Cole",
+            "album": "2014 Forest Hills Drive",
+            "views": "206K",
+            "flames": "105K"
+        },
+        {
+            "image": "j-cole.jpg",
+            "quote": "Aint no life like yours",
+            "artist": "J Cole",
+            "album": "2014 Forest Hills Drive",
+            "views": "206K",
+            "flames": "105K"
+        },
+        {
+            "image": "j-cole.jpg",
+            "quote": "Aint no life like yours",
+            "artist": "J Cole",
+            "album": "2014 Forest Hills Drive",
+            "views": "206K",
+            "flames": "105K"
+        },
+        {
+            "image": "j-cole.jpg",
+            "quote": "Aint no life like yours",
+            "artist": "J Cole",
+            "album": "2014 Forest Hills Drive",
+            "views": "206K",
+            "flames": "105K"
+        }
+    ]
+    var image = document.getElementById('image');
+    var artist = document.getElementsById('artist');
+    var quote = document.getElementsById('quote');
+    var views = document.getElementById('views');
+    var flames = document.getElementById('flames');
+</script>
 </html>
