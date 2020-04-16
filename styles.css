@@ -8,6 +8,10 @@
     margin-left: auto;
     margin-right: auto;    
 }
+.logo img:hover{
+    width: 20.3%;
+    height: 2.3%;
+}
 
 .banner-container{
     height: 600px;
@@ -127,13 +131,21 @@
     background-color: #1e1e1d;
     border-radius: 2px;
 }
+.album:hover, .divider:hover{
+    opacity: .9;
+    box-shadow: #1e1e1d 2px 2px 1px; 
+    font-size: 21px;
+}
 .quote-record p{
     margin-left: 3%;
     margin-top: 4%;
     color: white;
     font-family: "Courier";
     font-size: 20px;
-    width: 50%;
+    
+}
+li a{
+    all: unset;
 }
 .air-quotes{
     font-size: 30px;
@@ -168,6 +180,10 @@
 }
 .col{
     float: left;
+}
+#trending-all:hover, button:hover{
+    background-color: grey;
+    border-color: grey;
 }
 .featured{
     font-family: "Courier";

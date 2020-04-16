@@ -11,7 +11,7 @@
 <body>
     <div class="banner">
         <div class="logo">
-            <img src="image/symph-logo-black.png" alt="Symphony logo">
+            <a href="#"><img src="image/symph-logo-black.png" alt="Symphony logo" id="home"></a>
     
             <div class="banner-bg">
                 <div class="banner-container">
@@ -24,8 +24,8 @@
             that moves us.<span style="color: #eb4d15;">"</span></strong> 
         </p>
         <div class="search">
-            <input type="text" placeholder="Find Quotes">
-            <button class="search-button">Search</button>
+            <input type="text" placeholder="Find Quotes" id="search">
+            <button class="search-button" onclick="validate()">Search</button>
         </div>
         <div class="trending">
             <img src="image/trending-icon.png" alt="Trending icon">
@@ -51,38 +51,41 @@
         </div>
         <div class="divider">
             <div class="quote-record">
-                <img src="image/j-cole.jpg" alt="J Cole">
-                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+                <img src="image/billy.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> I don't care what consequence it brings.
+                     I have been a fool for lesser things</p>            
             </div>
             <div class="quote-details">
-                <p>Artist: <span class="artist-name">J Cole &nbsp; &nbsp;</span>
-                    <img src="image/visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
-                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+                <p>Artist: <span class="artist-name">Billy Joel &nbsp; &nbsp;</span>
+                    <img src="image/visibility-white.jpg" alt="Views"><span class="quote-details-small"> 199K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small"> 89K</span>
                 </p>
             </div>
         </div>
         
         <div class="divider">
             <div class="quote-record">
-                <img src="image/j-cole.jpg" alt="J Cole">
-                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+                <img src="image/adele.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> Cause I’ve been by myself all night long
+                    Hoping you’re someone I used to know.</p>            
             </div>
             <div class="quote-details">
-                <p>Artist: <span class="artist-name" id="artist">J Cole &nbsp; &nbsp;</span>
-                    <img src="image/visibility-white.jpg" alt="Views" id="views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
-                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small" id="flames"> 105K</span>
+                <p>Artist: <span class="artist-name" id="artist">Adele &nbsp; &nbsp;</span>
+                    <img src="image/visibility-white.jpg" alt="Views" id="views"><span class="quote-details-small"> 183K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small" id="flames"> 165K</span>
                 </p>
             </div>
         </div>
         <div class="divider">
             <div class="quote-record">
-                <img src="image/j-cole.jpg" alt="J Cole">
-                <p class="quote-quote"> <span class="air-quotes">"</span> Ain't a life better than yours.</p>            
+                <img src="image/drake.jpg" alt="J Cole">
+                <p class="quote-quote"> <span class="air-quotes">"</span> If I ever loved you,
+                     I'll always love you, that's how I was raised.</p>            
             </div>
             <div class="quote-details">
-                <p>Artist: <span class="artist-name">J Cole &nbsp; &nbsp;</span>
-                    <img src="image/visibility-white.jpg" alt="Views"><span class="quote-details-small"> 206K &nbsp; &nbsp;&nbsp; &nbsp;</span>
-                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small"> 105K</span>
+                <p>Artist: <span class="artist-name">Drake &nbsp; &nbsp;</span>
+                    <img src="image/visibility-white.jpg" alt="Views"><span class="quote-details-small"> 156K &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                <img src="image/fire-black.jpg" alt="Fire"><span class="quote-details-small"> 255K</span>
                 </p>
             </div>
         </div>
@@ -93,30 +96,30 @@
             <strong>Featured Albums</strong>
         </p>
     </div>  
-    <div class="albums col">
+    <div class="albums">
         <div class="album">
             <img src="image/miller.jpg" alt="Mac Miller">
             <p>Album: Circles</p>
 
         </div>
         <div class="album">
-            <img src="image/miller.jpg" alt="Mac Miller">
-            <p>Album: Circles</p>
+            <img src="image/scorpion.jpg" alt="Mac Miller">
+            <p>Album: Scorpion</p>
         </div>
 
         <div class="album">
-            <img src="image/miller.jpg" alt="Mac Miller">
-            <p>Album: Circles</p>
+            <img src="image/piano.jpg" alt="Mac Miller">
+            <p>Album: Piano Man</p>
         </div>
 
         <div class="album">
-            <img src="image/miller.jpg" alt="Mac Miller">
-            <p>Album: Circles</p>
+            <img src="image/burna.png" alt="Mac Miller">
+            <p>Album: A. Giant</p>
         </div>
 
         <div class="album">
-            <img src="image/miller.jpg" alt="Mac Miller">
-            <p>Album: Circles</p>
+            <img src="image/wow.jpg" alt="Mac Miller">
+            <p>Album: Wow T...</p>
         </div>
         <button class="full-trending-button">See More Albums</button>
     </div>
@@ -127,51 +130,16 @@
     </div>
     <footer>
         <ul>
-            <li>Home</li>
-            <li>Contact Us</li>
+            <li><a href="#home">Home</a></li>
             <li id="symph-copy">Symphony &copy;</li>
         </ul>
     </footer>
 </body>
 <script>
-    var trendingQuotes = [
-        {
-            "image": "j-cole.jpg",
-            "quote": "Aint no life like yours",
-            "artist": "J Cole",
-            "album": "2014 Forest Hills Drive",
-            "views": "206K",
-            "flames": "105K"
-        },
-        {
-            "image": "j-cole.jpg",
-            "quote": "Aint no life like yours",
-            "artist": "J Cole",
-            "album": "2014 Forest Hills Drive",
-            "views": "206K",
-            "flames": "105K"
-        },
-        {
-            "image": "j-cole.jpg",
-            "quote": "Aint no life like yours",
-            "artist": "J Cole",
-            "album": "2014 Forest Hills Drive",
-            "views": "206K",
-            "flames": "105K"
-        },
-        {
-            "image": "j-cole.jpg",
-            "quote": "Aint no life like yours",
-            "artist": "J Cole",
-            "album": "2014 Forest Hills Drive",
-            "views": "206K",
-            "flames": "105K"
+    function validate(){
+        if(document.getElementById('search').value == ""){
+            alert("empty");
         }
-    ]
-    var image = document.getElementById('image');
-    var artist = document.getElementsById('artist');
-    var quote = document.getElementsById('quote');
-    var views = document.getElementById('views');
-    var flames = document.getElementById('flames');
+    }
 </script>
 </html>
